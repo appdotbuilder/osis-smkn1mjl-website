@@ -4,7 +4,7 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, Megaphone, Calendar, Target, Users, MessageCircle, Download } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -13,17 +13,47 @@ const mainNavItems: NavItem[] = [
         href: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Pengumuman',
+        href: '/announcements',
+        icon: Megaphone,
+    },
+    {
+        title: 'Kegiatan',
+        href: '/activities',
+        icon: Calendar,
+    },
+    {
+        title: 'Program Kerja',
+        href: '/work-programs',
+        icon: Target,
+    },
+    {
+        title: 'Profil OSIS',
+        href: '/profile',
+        icon: Users,
+    },
+    {
+        title: 'Feedback',
+        href: '/feedback',
+        icon: MessageCircle,
+    },
+    {
+        title: 'Download',
+        href: '/downloads',
+        icon: Download,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
+        title: 'Beranda',
+        href: '/',
         icon: Folder,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
+        title: 'FAQ',
+        href: '/faq',
         icon: BookOpen,
     },
 ];
