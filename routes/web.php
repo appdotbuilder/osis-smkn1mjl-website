@@ -57,5 +57,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
+// Admin routes - protected by auth and admin middleware
+Route::middleware(['auth', 'verified', App\Http\Middleware\AdminMiddleware::class])
+    ->prefix('admin')
+    ->group(base_path('routes/admin.php'));
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

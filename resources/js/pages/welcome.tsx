@@ -92,6 +92,11 @@ export default function Welcome({
                         </div>
 
                         <div className="flex items-center space-x-4">
+                            <Link href="/admin">
+                                <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                                    🎛️ Admin Panel
+                                </Button>
+                            </Link>
                             <Link href="/join">
                                 <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                                     Gabung OSIS
@@ -326,6 +331,98 @@ export default function Welcome({
                 </section>
             )}
 
+            {/* Admin Features Showcase */}
+            <section className="py-16 bg-gradient-to-br from-purple-900 to-blue-900 text-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold mb-4">🎛️ Admin Panel Lengkap</h2>
+                        <p className="text-purple-200">
+                            Sistem manajemen konten dengan dukungan upload file dan validasi data yang robust
+                        </p>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white p-6">
+                            <div className="text-3xl mb-4">📅</div>
+                            <h3 className="font-semibold mb-2">Kelola Kegiatan</h3>
+                            <p className="text-white/80 text-sm mb-4">
+                                Upload galeri foto, set kategori, dan atur kegiatan unggulan
+                            </p>
+                            <Link href="/admin/activities">
+                                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                                    Lihat Demo
+                                </Button>
+                            </Link>
+                        </Card>
+
+                        <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white p-6">
+                            <div className="text-3xl mb-4">📢</div>
+                            <h3 className="font-semibold mb-2">Pengumuman</h3>
+                            <p className="text-white/80 text-sm mb-4">
+                                Publikasi pengumuman dengan gambar, jadwal otomatis
+                            </p>
+                            <Link href="/admin/announcements">
+                                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                                    Lihat Demo
+                                </Button>
+                            </Link>
+                        </Card>
+
+                        <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white p-6">
+                            <div className="text-3xl mb-4">📁</div>
+                            <h3 className="font-semibold mb-2">File Upload</h3>
+                            <p className="text-white/80 text-sm mb-4">
+                                Upload dokumen, validasi ukuran dan format otomatis
+                            </p>
+                            <Link href="/admin/downloads">
+                                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                                    Lihat Demo
+                                </Button>
+                            </Link>
+                        </Card>
+
+                        <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white p-6">
+                            <div className="text-3xl mb-4">👥</div>
+                            <h3 className="font-semibold mb-2">Manajemen Data</h3>
+                            <p className="text-white/80 text-sm mb-4">
+                                Kelola anggota, feedback, dan testimoni dengan mudah
+                            </p>
+                            <Link href="/admin">
+                                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                                    Dashboard
+                                </Button>
+                            </Link>
+                        </Card>
+                    </div>
+
+                    <div className="mt-12 text-center">
+                        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 max-w-4xl mx-auto">
+                            <h3 className="text-2xl font-bold mb-4">✨ Fitur Utama Admin Panel</h3>
+                            <div className="grid md:grid-cols-2 gap-6 text-left">
+                                <div>
+                                    <h4 className="font-semibold mb-2">🔧 Teknologi Modern</h4>
+                                    <ul className="space-y-1 text-white/80 text-sm">
+                                        <li>• Laravel 11 dengan Inertia.js</li>
+                                        <li>• React + TypeScript</li>
+                                        <li>• Validasi form yang robust</li>
+                                        <li>• Upload file dengan preview</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2">🛡️ Keamanan & Validasi</h4>
+                                    <ul className="space-y-1 text-white/80 text-sm">
+                                        <li>• Form Request validation</li>
+                                        <li>• File type & size validation</li>
+                                        <li>• XSS dan CSRF protection</li>
+                                        <li>• Authorization middleware</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Call to Action */}
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -337,6 +434,11 @@ export default function Welcome({
                         Kembangkan potensi kepemimpinanmu bersama OSIS!
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link href="/admin">
+                            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+                                🎛️ Coba Admin Panel
+                            </Button>
+                        </Link>
                         <Link href="/join">
                             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                                 📝 Daftar Sekarang
