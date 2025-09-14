@@ -92,11 +92,6 @@ export default function Welcome({
                         </div>
 
                         <div className="flex items-center space-x-4">
-                            <Link href="/admin">
-                                <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                                    🎛️ Admin Panel
-                                </Button>
-                            </Link>
                             <Link href="/join">
                                 <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                                     Gabung OSIS
